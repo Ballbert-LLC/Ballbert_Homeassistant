@@ -1,0 +1,7 @@
+skillMetadata:
+    sections:
+        - name: Api Key
+          fields:
+              - name: API_KEY
+                type: text
+                label: Enter your api key
