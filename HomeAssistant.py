@@ -182,7 +182,7 @@ class HomeAssistant(Skill):
         Sets a homeassistant light's brightness.
 
         :param string light: The light you want to set brightness.
-        :param float brightness: The brightness you want to set the light to
+        :param number brightness: The brightness you want to set the light to
         """
         brightness_req = brightness
         if brightness_req > 100:
@@ -306,7 +306,7 @@ class HomeAssistant(Skill):
         Trigger a homeassistant tracker.
 
         :param string tracker: The light you want to decrease the brightness.
-        :param float value: What you want to set the themostat to
+        :param number value: What you want to set the themostat to
         """
 
         # API endpoint to set thermostat temperature
