@@ -55,7 +55,7 @@ class HomeAssistant(Skill):
         """
         Turns on a homeassistant device
 
-        :param string entity: The device you want to turn on domains must have a turn_off endpoint
+        :param string entity: The device you want to turn on domains must have a turn_off endpoint. Ex. Light
         """
 
         result = self.query_homeassistant(
@@ -72,7 +72,7 @@ class HomeAssistant(Skill):
         """
         Turns off a homeassistant device
 
-        :param string entity: The device you want to turn off domains must have a turn_off endpoint
+        :param string entity: The device you want to turn off domains must have a turn_off endpoint. Ex. Light
         """
         result = self.query_homeassistant(
             f"api/services/homeassistant/turn_off",
